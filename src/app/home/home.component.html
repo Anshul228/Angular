@@ -1,0 +1,22 @@
+<!-- <p>home works!</p>
+<h4>AM HOME CONTROLLEr</h4> -->
+<h1>Your Weigth Entries</h1>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <th></th>
+            <th>Date</th>
+            <th>Weigth</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let d of data">
+                <td><img src="assets/images/info.png">
+                    <img src="assets/images/trash.png"></td>
+                <td>
+
+                    {{d.date|date}}</td>
+                <td>{{d.weight}} lbs</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

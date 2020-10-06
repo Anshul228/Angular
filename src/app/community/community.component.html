@@ -1,0 +1,31 @@
+<!-- <p>community works!</p>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <th>ID</th>
+            <th>Commenter</th>
+            <th>Comment</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let d of comment">
+
+                <td>{{d.id}}</td>
+                <td>{{d.commenter}}</td>
+                <td>{{d.comment}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+<div *ngFor="let d of comment" class="">
+    <p>{{d.commenter+' : '+d.comment}}</p>
+
+</div>
+
+
+
+<a [routerLink]="['home']">
+    <button class="btn btn-warn">
+        BACK
+    </button>
+</a>
